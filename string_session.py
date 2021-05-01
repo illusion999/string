@@ -1,35 +1,42 @@
-from telethon.sessions import StringSession
-
 from telethon.sync import TelegramClient
 
-print("""Enter Your Valid Phone No. With Contry Code To Continue!\n\n """)
+from telethon.sessions import StringSession
 
-API_KEY = "5445895"
+print ("")
+
+print ("")
+
+print("""processing.......""")
+
+API_KEY = '5445895'
 
 API_HASH = "b104f43c21861654005fa97c96a8a06f"
 
 while True:
 
-    try:
+  try:
 
-        with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
+   with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
 
-            print(
+      print("")
 
-                "String Session Sucessfully Sent To Your Saved Message, Store It To A Safe Place!!\n\n "
+      session = client.session.save()
 
-            )
+      client.send_message("me", f"Here is your TELEGRAM STRING SESSION\n(tap to copy)👇 \n\n {session}")
 
-            Print("")
+      print("You telegramString session successfully stored in your telegram, please check your Telegram Saved Messages ")
 
-            session = client.session.save()
+      print("Store it safe !!")
 
-            client.send_message(
+  except:
 
-                "me",
+   print ("")
 
-                f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n {session} \n\n"
+   print ("Wrong phone number \n make sure its with correct  country code")
 
+   print ("")
 
+   continue
 
+  break
 

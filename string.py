@@ -1,4 +1,4 @@
-from telethon.sync import TelegramClient
+from telethon import TelegramClient
 
 from telethon.sessions import StringSession
 
@@ -39,3 +39,10 @@ while True:
    continue
 
   break
+
+
+   
+
+
+
+

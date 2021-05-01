@@ -2,8 +2,6 @@ from telethon.sessions import StringSession
 
 from telethon.sync import TelegramClient
 
-print("")
-
 print("""Enter Your Valid Phone No. With Contry Code To Continue!\n\n """)
 
 API_KEY = "5445895"
@@ -22,7 +20,7 @@ while True:
 
             )
 
-            print("")
+            Print("")
 
             session = client.session.save()
 
@@ -31,6 +29,7 @@ while True:
                 "me",
 
                 f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n {session} \n\n"
+
 
 
 
